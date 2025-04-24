@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/addSchool",
+        "methods": ["POST"],
+        "dest": "api/addSchool.js"
+      },
+      {
+        "src": "/listSchools",
+        "methods": ["GET"],
+        "dest": "api/listSchools.js"
+      }
+    ]
+  }
+  
