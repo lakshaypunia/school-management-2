@@ -1,5 +1,5 @@
 // api/listSchools.js
-import pool from '../db.js';
+import pool from "../db/db";
 
 function calculateDistance(lat1, lon1, lat2, lon2) {
   const toRad = (value) => (value * Math.PI) / 180;

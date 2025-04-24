@@ -1,5 +1,5 @@
 // api/addSchool.js
-import pool from '../db.js';
+import pool from "../db/db";
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
